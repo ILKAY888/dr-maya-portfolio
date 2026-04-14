@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Portfolio | Projects Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">DevPortfolio</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+        <h2 class="section-title">Technical Portfolio</h2>
+        <p style="text-align: center; margin-bottom: 3rem; color: #b0b0b0;">// Showcasing my best work and technical achievements</p>
+        
+        <div class="portfolio-grid">
+            <!-- Project 1: E-Commerce Platform -->
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <div class="tech-icon">🛒</div>
+                    <div class="portfolio-badge">Featured</div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack e-commerce solution with real-time inventory, payment processing, and order management system.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" onclick="showProjectDetails('ecommerce')">📖 Case Study →</a>
+                        <a href="#" onclick="showLiveDemo('ecommerce')">🌐 Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2: AI-Powered Analytics Dashboard -->
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <div class="tech-icon">📊</div>
+                    <div class="portfolio-badge">AI/ML</div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>AI Analytics Dashboard</h3>
+                    <p>Real-time business intelligence dashboard with predictive analytics and machine learning insights.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" onclick="showProjectDetails('analytics')">📖 Case Study →</a>
+                        <a href="#" onclick="showLiveDemo('analytics')">🌐 Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3: Cloud Native Microservices -->
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <div class="tech-icon">☁️</div>
+                    <div class="portfolio-badge">Cloud</div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Microservices Architecture</h3>
+                    <p>Scalable microservices platform with Kubernetes orchestration and service mesh implementation.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">gRPC</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" onclick="showProjectDetails('microservices')">📖 Case Study →</a>
+                        <a href="#" onclick="showLiveDemo('microservices')">🌐 Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4: Mobile Banking App -->
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <div class="tech-icon">🏦</div>
+                    <div class="portfolio-badge">Mobile</div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Mobile Banking Application</h3>
+                    <p>Secure cross-platform banking app with biometric authentication and real-time transactions.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Blockchain</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" onclick="showProjectDetails('banking')">📖 Case Study →</a>
+                        <a href="#" onclick="showLiveDemo('banking')">🌐 Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5: DevOps Pipeline -->
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <div class="tech-icon">🚀</div>
+                    <div class="portfolio-badge">DevOps</div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>CI/CD Pipeline Automation</h3>
+                    <p>End-to-end automation pipeline with automated testing, deployment, and monitoring.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Jenkins</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" onclick="showProjectDetails('devops')">📖 Case Study →</a>
+                        <a href="#" onclick="showLiveDemo('devops')">🌐 Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6: Real-time Collaboration Tool -->
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <div class="tech-icon">💬</div>
+                    <div class="portfolio-badge">WebSocket</div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Real-time Collaboration Tool</h3>
+                    <p>Team collaboration platform with live editing, video calls, and file sharing capabilities.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">WebSocket</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">WebRTC</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" onclick="showProjectDetails('collab')">📖 Case Study →</a>
+                        <a href="#" onclick="showLiveDemo('collab')">🌐 Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 7: Blockchain Supply Chain -->
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <div class="tech-icon">🔗</div>
+                    <div class="portfolio-badge">Blockchain</div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>Blockchain Supply Chain</h3>
+                    <p>Transparent supply chain tracking system using Ethereum smart contracts.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Solidity</span>
+                        <span class="tech-tag">Web3.js</span>
+                        <span class="tech-tag">Ethereum</span>
+                        <span class="tech-tag">IPFS</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" onclick="showProjectDetails('blockchain')">📖 Case Study →</a>
+                        <a href="#" onclick="showLiveDemo('blockchain')">🌐 Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 8: IoT Dashboard -->
+            <div class="portfolio-item">
+                <div class="portfolio-header">
+                    <div class="tech-icon">🌡️</div>
+                    <div class="portfolio-badge">IoT</div>
+                </div>
+                <div class="portfolio-content">
+                    <h3>IoT Device Management</h3>
+                    <p>Centralized dashboard for managing IoT devices with real-time data visualization.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MQTT</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">InfluxDB</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" onclick="showProjectDetails('iot')">📖 Case Study →</a>
+                        <a href="#" onclick="showLiveDemo('iot')">🌐 Live Demo →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stats Section -->
+        <div style="margin-top: 4rem; text-align: center;">
+            <h3 style="color: #e94560; margin-bottom: 2rem;">// Project Statistics</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                <div style="background: rgba(26, 26, 46, 0.5); padding: 1.5rem; border-radius: 10px;">
+                    <div style="font-size: 2rem; color: #e94560;">15+</div>
+                    <div>Projects Completed</div>
+                </div>
+                <div style="background: rgba(26, 26, 46, 0.5); padding: 1.5rem; border-radius: 10px;">
+                    <div style="font-size: 2rem; color: #e94560;">10+</div>
+                    <div>Happy Clients</div>
+                </div>
+                <div style="background: rgba(26, 26, 46, 0.5); padding: 1.5rem; border-radius: 10px;">
+                    <div style="font-size: 2rem; color: #e94560;">50k+</div>
+                    <div>Lines of Code</div>
+                </div>
+                <div style="background: rgba(26, 26, 46, 0.5); padding: 1.5rem; border-radius: 10px;">
+                    <div style="font-size: 2rem; color: #e94560;">99.9%</div>
+                    <div>Uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Technical Portfolio - Building the future with code</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">// All projects are production-ready and scalable</p>
+    </footer>
+
+    <script>
+        function showProjectDetails(project) {
+            const details = {
+                ecommerce: "E-Commerce platform handling 10,000+ daily transactions with 99.9% uptime. Features include real-time inventory, AI recommendations, and multi-currency support.",
+                analytics: "AI dashboard processing 1M+ data points daily. Provides predictive insights and automated reporting for business intelligence.",
+                microservices: "Scalable architecture serving 100k+ requests per second. Implemented with Kubernetes and service mesh for high availability.",
+                banking: "Secure banking app with 50,000+ active users. Features include biometric auth, real-time transfers, and investment tracking.",
+                devops: "Automated pipeline reducing deployment time from hours to minutes. Includes comprehensive monitoring and alerting system.",
+                collab: "Real-time platform used by 100+ teams. Features include live editing, video conferencing, and file sharing with version control.",
+                blockchain: "Transparent supply chain solution tracking 10,000+ products. Immutable records with smart contract automation.",
+                iot: "IoT platform managing 5,000+ connected devices. Real-time monitoring with predictive maintenance alerts."
+            };
+            alert(`📁 Project Details:\n\n${details[project] || 'Coming soon!'}`);
+        }
+        
+        function showLiveDemo(project) {
+            alert('🌐 Live demo coming soon! Check back for the interactive version.');
+        }
+    </script>
+</body>
+</html>
